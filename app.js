@@ -28,7 +28,9 @@ var __API_URL__ = 'https://limebooks.herokuapp.com';
             console.error(err);
             pageLoad();
         });
-        $('#book-entry-form').reset();
+        $('#book-entry-form').each(function(){
+            this.reset();
+        });
     });
 
     function pageLoad() {
