@@ -13,14 +13,18 @@ $('#book-entry-form').on('submit', function(e) {
         url: e.target.url.value
     }
 
-    $.post(`'${__API_URL__}/db/books'`, data)
+    $.post(`'${__API_URL__}/db/book'`, data)
         .then(function(){
             pageLoad();
     });
+    .catch(function(err) {
+        console.error(err);
+        pageLoad();
+      });
 });
 
 function pageLoad() {
-    $.get(`'${__API_URL__}/db/books'`)
+    $.get(`'${__API_URL__}/db/book'`)
         .then(function(data) {
         $('#results').empty();
 
