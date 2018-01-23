@@ -41,8 +41,10 @@ var __API_URL__ = 'https://limebooks.herokuapp.com';
 
                 data.rows.forEach(function(item) {
                     let content = `
+                    <div class="overlay">
                     <h2>${item.title}</h2>
                     <p>by: ${item.author}</p>
+                    </div>
                     <img src="${item.url}" class="book-image">
                     `;
                     $('#results').append(content);
