@@ -8,27 +8,27 @@ $('#book-entry-form').on('submit', function(e) {
     e.preventDefault();
 
     let data = {
-        name: e.target.bookName.value,
-        age: e.target.author.value,
-        ninja: e.target.imageUrl.value
+        title: e.target.title.value,
+        author: e.target.author.value,
+        url: e.target.url.value
     }
 
-    $.post(`'${__API_URL__}/db/person'`, data)
+    $.post(`'${__API_URL__}/db/books'`, data)
         .then(function(){
             pageLoad();
     });
 });
 
 function pageLoad() {
-    $.get(`'${__API_URL__}/db/person'`)
+    $.get(`'${__API_URL__}/db/books'`)
         .then(function(data) {
         $('#results').empty();
 
             data.rows.forEach(function(item) {
                 let content = `
-                <h2>name: ${item.bookName}</h2>
-                <p>age ${item.author}</p>
-                <p>ninja ${item.imageUrl}</p>
+                <h2>title: ${item.title}</h2>
+                <p>author ${item.author}</p>
+                <p>url ${item.url}</p>
                 `;
                 $('#results').append(content);
             });
