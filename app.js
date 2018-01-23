@@ -44,8 +44,6 @@ var __API_URL__ = 'https://limebooks.herokuapp.com';
                     <h2>title: ${item.title}</h2>
                     <p>author ${item.author}</p>
                     <img src="${item.url}" class="book-image">
-                    <p>isbn ${item.isbn}</p>
-                    <p>description ${item.description}</p>
                     `;
                     $('#results').append(content);
                 });
