@@ -26,6 +26,7 @@ $('#book-entry-form').on('submit', function(e) {
 function pageLoad() {
     $.get(`${__API_URL__}/db/book`)
         .then(function(data) {
+        console.log('our data:', data);
         $('#results').empty();
 
             data.rows.forEach(function(item) {
