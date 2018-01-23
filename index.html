@@ -4,10 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Lime Book</title>
 </head>
 <body>
   <h2>HI!</h2>
+  <main>
+    <form id="book-entry-form">
+        <input type="text" id="book-name" placeholder="book-name" required>
+        <input type="number" id="author" placeholder="author" required>
+        <input type="text" id="image-url" placeholder="image-url" required>
+        <button type="submit">Add Book</button>
+    </form>
+ <section id="results"></section>
+</main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="app.js"></script>
 </body>
