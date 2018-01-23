@@ -4,23 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lime Book</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <title>Lime Books</title>
 </head>
 <body>
-  <h2>HI!</h2>
-  <main>
-    <form id="book-entry-form">
-        <input type="text" id="title" placeholder="title" required>
-        <input type="text" id="author" placeholder="author" required>
-        <input type="text" id="url" placeholder="url" required>
-        <input type="text" id="isbn" placeholder="isbn" required>
-        <textarea id="description" rows="10" cols="30" placeholder="book description" required></textarea>
-        <button type="submit">Add Book</button>
-    </form>
- <section id="results"></section>
- <section id="book_count"></section>
- <section id="about us"></section>
-</main>
+  <header>
+    <h1>Welcome to da Shizzy!</h1>
+  </header>
+  <div class="content">
+    <main>
+      <form id="book-entry-form">
+          <input type="text" id="title" placeholder="title" required>
+          <input type="text" id="author" placeholder="author" required>
+          <input type="text" id="url" placeholder="url" required>
+          <input type="text" id="isbn" placeholder="isbn" required>
+          <textarea id="description" rows="10" cols="30" placeholder="book description" required></textarea>
+          <button type="submit">Add Book</button>
+      </form>
+      <section id="results"></section>
+      <section id="book_count"></section>
+      <section id="about us"></section>
+    </main>
+  </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 <script src="app.js"></script>
