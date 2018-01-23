@@ -1,5 +1,7 @@
 'use strict';
 
+var __API_URL__ = 'https://limebooks.herokuapp.com/'; 
+
 pageLoad();
 
 $('#book-entry-form').on('submit', function(e) {
