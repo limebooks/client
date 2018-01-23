@@ -22,11 +22,13 @@ var __API_URL__ = 'https://limebooks.herokuapp.com';
         $.post(`${__API_URL__}/db/book`, data)
             .then(function(){
                 pageLoad();
+                
         })
         .catch(function(err) {
             console.error(err);
             pageLoad();
         });
+        $('#book-entry-form').reset();
     });
 
     function pageLoad() {
