@@ -22,10 +22,14 @@ var __API_URL__ = 'https://limebooks.herokuapp.com';
         $.post(`${__API_URL__}/db/book`, data)
             .then(function(){
                 pageLoad();
+                
         })
         .catch(function(err) {
             console.error(err);
             pageLoad();
+        });
+        $('#book-entry-form').each(function(){
+            this.reset();
         });
     });
 
@@ -37,11 +41,9 @@ var __API_URL__ = 'https://limebooks.herokuapp.com';
 
                 data.rows.forEach(function(item) {
                     let content = `
-                    <h2>title: ${item.title}</h2>
-                    <p>author ${item.author}</p>
+                    <h2>${item.title}</h2>
+                    <p>by: ${item.author}</p>
                     <img src="${item.url}" class="book-image">
-                    <p>isbn ${item.isbn}</p>
-                    <p>description ${item.description}</p>
                     `;
                     $('#results').append(content);
                 });
