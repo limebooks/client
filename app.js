@@ -16,7 +16,7 @@ $('#book-entry-form').on('submit', function(e) {
     $.post(`'${__API_URL__}/db/book'`, data)
         .then(function(){
             pageLoad();
-    });
+    })
     .catch(function(err) {
         console.error(err);
         pageLoad();
