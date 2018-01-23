@@ -1,6 +1,6 @@
 'use strict';
 
-var __API_URL__ = 'https://limebooks.herokuapp.com/'; 
+var __API_URL__ = 'https://limebooks.herokuapp.com'; 
 
 pageLoad();
 
