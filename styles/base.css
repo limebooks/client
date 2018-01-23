@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: 1px orange dotted;
-}
+} */
 
 body {
     width: 90%;
@@ -22,9 +22,36 @@ main {
     position: relative;
 }
 
-.results {
+#results {
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(213, 255, 205);
+ 
     border-radius: 20px;
+    position: relative;
+}
+
+#results img {
+    width:100%;
+    margin-top: 30px;
+    border-radius: 50px;
+}
+
+#results h2 {
+
+}
+
+.overlay {
+    position: relative;
+}
+
+.title-overlay {
+    background-color: rgb(80, 80, 80);
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+    height: 25%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: lime;
+    font-size: 36px;
 }
