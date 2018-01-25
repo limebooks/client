@@ -10,25 +10,34 @@
 </head>
 <body>
   <header>
-    <h1>Welcome to da Shizzy!</h1>
+    <h1>Welcome to Lime Books!</h1>
   </header>
   <div class="content">
     <main>
       <form id="book-entry-form">
           <input type="text" id="title" placeholder="title" required>
           <input type="text" id="author" placeholder="author" required>
-          <input type="text" id="url" placeholder="url" required>
+          <input type="text" id="url" value="assets/book-stack-xxl.png" required>
           <input type="text" id="isbn" placeholder="isbn" required>
           <textarea id="description" rows="10" cols="30" placeholder="book description" required></textarea>
           <button type="submit">Add Book</button>
       </form>
-      <section id="results"></section>
-      <section id="book_count"></section>
+      <section id="results">
+        <h2 id="book_count"></h2>
+      </section>
+      
       <section id="about us"></section>
     </main>
   </div>
+  <footer>
+
+  </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+<script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+<script src="scripts/entry-view.js"></script>
+<script src="scripts/books.js"></script>
+<script src="scripts/error-view.js"></script>
 <script src="app.js"></script>
 </body>
 

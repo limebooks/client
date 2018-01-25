@@ -19,7 +19,7 @@ var __API_URL__ = 'https://limebooks.herokuapp.com';
             description: e.target.description.value
         }
 
-        $.post(`${__API_URL__}/db/book`, data)
+        $.post(`${__API_URL__}/api/v1/books`, data)
             .then(function(){
                 pageLoad();
                 
@@ -34,7 +34,7 @@ var __API_URL__ = 'https://limebooks.herokuapp.com';
     });
 
     function pageLoad() {
-        $.get(`${__API_URL__}/db/book`)
+        $.get(`${__API_URL__}/api/v1/books`)
             .then(function(data) {
             console.log('our data:', data);
             $('#results').empty();
@@ -54,6 +54,8 @@ var __API_URL__ = 'https://limebooks.herokuapp.com';
             },function(err) {
                 console.error(err);
         });
+        allBooks.init();
+        // $('#book-entry-form').hide();
     }
 
 
