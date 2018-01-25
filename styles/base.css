@@ -3,15 +3,20 @@
 } */
 
 body {
-    width: 90%;
-    margin: 20px auto;
+    width: 480px;
+    margin: 0 auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(85, 85, 85);
 }
 
 .content {
-    width:450px;
+    width:100%;
     margin: 0 auto;
+}
+
+h1 {
+    font-size: 4vw;
+    text-align: center;
 }
 
 form {
@@ -86,10 +91,15 @@ textarea {
     bottom: 0px;
     width:100%;
     height: 25%;
-    border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: lime;
+    font-size: 3vw;
+    line-height: 1.5em;
+    /* border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     color: rgb(209, 255, 209);
-    font-size: 30px;
+    font-size: 30px; */
 }
 
 form {
