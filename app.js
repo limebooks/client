@@ -39,7 +39,7 @@ var __API_URL__ = 'https://limebooks.herokuapp.com';
             console.log('our data:', data);
             $('#results').empty();
 
-                data.rows.forEach(function(item) {
+                data.forEach(function(item) {
                     let content = `
                     <a href="/books/:book_id">
                     <div class="overlay">
